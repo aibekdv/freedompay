@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        app:title="Payment"
+        app:titleTextColor="@android:color/black"
+        app:titleTextAppearance="@style/MyToolbarTitleText"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <money.paybox.payboxsdk.view.PaymentView
+        android:id="@+id/paymentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar" /> 
+
+</RelativeLayout>

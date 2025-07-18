@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kg.neosoft.freedompay">
+
+    <application android:theme="@style/AppTheme">
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
